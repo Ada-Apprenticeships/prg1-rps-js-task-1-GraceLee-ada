@@ -2,21 +2,20 @@ function rockPaperScissors(player1, player2) {
   if (player1 === player2) {
     return "draw";
   };
-  if (choices[player1].includes(choices[player1].slice(0,2)) === true) {
+  if (choices[player1].includes(player2) === true) {
       return "player1";
-    }
+    };
     return "player2";
 };
-
 let choices = {
-  "rock": ["scissors", "lizard", "spock", "paper"],
-  "paper":["rock", "spock", "scissors", "lizard"],
-  "scissors": ["paper", "lizard", "spock", "rock"],
-  "lizard": ["paper", "spock", "rock", "scissors"],
-  "spock": ["scissors", "rock", "lizard", "paper"],
+  "rock": ["scissors", "lizard"],
+  "paper":["rock", "spock"],
+  "scissors": ["paper", "lizard"],
+  "lizard": ["paper", "spock"],
+  "spock": ["scissors", "rock"],
 };
 
-// console.log(rockPaperScissors("paper", "lizard"));
+//console.log(rockPaperScissors("paper", "lizard"));
 
 // Leave this code here for the automated tests
 module.exports = {
@@ -24,7 +23,14 @@ module.exports = {
 }
 
 
-
+//Objects with strengths and weaknesses
+// let choices = {
+//   "rock": ["scissors", "lizard", "spock", "paper"],
+//   "paper":["rock", "spock", "scissors", "lizard"],
+//   "scissors": ["paper", "lizard", "spock", "rock"],
+//   "lizard": ["paper", "spock", "rock", "scissors"],
+//   "spock": ["scissors", "rock", "lizard", "paper"],
+// };
 
 //Only code that works
 // if (player1 === player2) {
