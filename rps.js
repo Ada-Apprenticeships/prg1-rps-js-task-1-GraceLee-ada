@@ -1,35 +1,56 @@
 function rockPaperScissors(player1, player2) {
   if (player1 === player2) {
     return "draw";
-  };
-  switch (player1) {
-    case "rock":
-      if (player2 === "paper" && "spock") {
-        return "player2"
-      };
-      return "player1";
-    case "paper":
-      if (player2 === "scissors" && "lizard") {
-        return "player2";
-      };
-      return "player1";
-    case "scissors":
-      if (player2 === "rock" && "spock") {
-        return "player2";
-      };
-      return "player1";z
-    case "lizard":
-      if (player2 === "rock" && "scissors") {
-        return "player2";
-      };
-      return "player1";
-    case "spock":
-      if (player2 === "lizard" && "paper") {
-        return "player2";
-      };
-      return "player1";
-  };
+  } else {
+    
+  }
+  
 };
+
+const rock = ["scissors", "lizard", "spock", "paper"]
+const paper = ["rock", "spock", "scissors", "lizard"]
+const scissors = ["paper", "lizard", "spock", "rock"]
+const lizard = ["paper", "spock", "rock", "scissors"]
+const spock = ["scissors", "rock", "lizard", "paper"]
+
+
+
+
+
+
+
+
+
+
+console.log(rockPaperScissors("paper", "lizard"));
+
+// switch (player1) {
+//   case "rock":
+//     if (player2 === "paper" && "spock") {
+//       return "player2"
+//     };
+//     return "player1";
+//   case "paper":
+//     if (player2 === "scissors" && "lizard") {
+//       return "player2";
+//     };
+//     return "player1";
+//   case "scissors":
+//     if (player2 === "rock" && "spock") {
+//       return "player2";
+//     };
+//     return "player1";z
+//   case "lizard":
+//     if (player2 === "rock" && "scissors") {
+//       return "player2";
+//     };
+//     return "player1";
+//   case "spock":
+//     if (player2 === "lizard" && "paper") {
+//       return "player2";
+//     };
+//     return "player1";
+// };
 
 // if (player1 === player2) {
 //   return "draw";
