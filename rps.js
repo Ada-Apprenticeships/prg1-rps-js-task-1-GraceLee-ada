@@ -12,7 +12,7 @@ function rockPaperScissors(player1, player2) {
   } else if (winningOptions[player1].includes(player2)) {
     return "player1";
   }
-  return "player2";
+  return "player2"; 
 }
 
 // Leave this code here for the automated tests
